@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IFRS Quest - Entrena tus Normas Internacionales</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <h1>IFRS Quest</h1>
+      <p>
+        Conviértete en un héroe financiero dominando las Normas Internacionales de
+        Información Financiera (IFRS). Supera misiones temáticas y desbloquea
+        logros para convertirte en un <strong>IFRS Master</strong>.
+      </p>
+    </header>
+
+    <main>
+      <section class="dashboard">
+        <div class="level">Nivel: <span id="level">1</span></div>
+        <div class="xp">XP: <span id="xp">0</span> / <span id="xp-target">100</span></div>
+        <div class="streak">Racha de respuestas correctas: <span id="streak">0</span></div>
+        <div class="progress">
+          <div id="progress-bar" class="progress-bar"></div>
+        </div>
+      </section>
+
+      <section class="mission">
+        <h2 id="mission-title">Selecciona una misión</h2>
+        <p id="mission-description"></p>
+
+        <div class="card" id="card-container" hidden>
+          <h3 id="scenario-title"></h3>
+          <p id="scenario-description"></p>
+
+          <div class="options" id="options"></div>
+
+          <button id="reveal-button" class="primary" disabled>Revelar resultado</button>
+          <p id="feedback" class="feedback"></p>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <section>
+          <h2>Misiones</h2>
+          <ul id="missions"></ul>
+        </section>
+
+        <section class="achievements">
+          <h2>Logros</h2>
+          <ul id="achievements"></ul>
+        </section>
+
+        <section class="resources">
+          <h2>Recursos IFRS</h2>
+          <ul>
+            <li><a href="https://www.ifrs.org/issued-standards/list-of-standards/" target="_blank" rel="noopener">Normas oficiales IFRS</a></li>
+            <li><a href="https://www.ifrs.org/news-and-events/updates/" target="_blank" rel="noopener">Actualizaciones IFRS</a></li>
+            <li><a href="https://www.ifrs.org/issuance/" target="_blank" rel="noopener">Guías y Material Complementario</a></li>
+          </ul>
+        </section>
+      </aside>
+    </main>
+
+    <footer>
+      <p>
+        IFRS Quest está diseñado para equipos financieros que desean aprender y
+        repasar las normas internacionales en un formato interactivo. Personaliza
+        las misiones y agrega casos reales de tu organización para aumentar su
+        relevancia.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
